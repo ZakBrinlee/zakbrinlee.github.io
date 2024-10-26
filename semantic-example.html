@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- machine-readable information (metadata) about the document -->
+  <head>
+    <meta charset="UTF-8">
+    <title>Accessibility Demo</title>
+    <!-- CSS (load bootstrap from a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style type="text/css">
+      body { padding-top:50px; }
+
+      .flex-container-row {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+      }
+
+      .article {
+        width: 70%;
+        padding: 15px;
+      }
+
+      .aside {
+        width: 30%;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body class="mw-100 container-xl px-5">
+    <!-- main navigation in here -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Accessibility Demo</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Sample 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/sample2.html">Sample 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/semantic-example.html">Semantic Layout Example</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Here is our page's main content -->
+    <main class='flex-container-row'>
+
+      <!-- It contains an article -->
+      <article class='article'>
+        <h1>Article heading</h1> 
+
+        <!-- article content in here -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas amet ipsa voluptates fugit ea, enim soluta libero, repellendus totam inventore, qui repudiandae animi nobis ratione iste quod error. Nobis, magnam?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores animi quod quis repellendus maxime quidem quas vero enim doloremque optio, quibusdam temporibus corrupti neque voluptatem veniam architecto quae sint alias.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis vel voluptatum eius voluptate neque explicabo, iusto ad, natus itaque modi perferendis expedita corrupti quaerat ab distinctio. Fugit expedita reprehenderit velit.</p>
+
+        <h2>Subheading</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas amet ipsa voluptates fugit ea, enim soluta libero, repellendus totam inventore, qui repudiandae animi nobis ratione iste quod error. Nobis, magnam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor eaque praesentium nisi vitae error cumque culpa quisquam recusandae. Deserunt nam nulla dolore adipisci tempora voluptatem a iste, ullam illo. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio laudantium enim minus voluptas nihil voluptatum, pariatur dolores numquam, quo eveniet reiciendis? Doloremque illo labore itaque inventore. Officia maxime magni similique!</p>
+      </article>
+
+      <aside class='aside'>
+        <h3>Related</h3>
+        <!-- aside content in here -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum natus inventore id alias ullam libero dolor tempore doloribus, doloremque blanditiis fugit quam molestiae dolore cupiditate? Sapiente veniam dignissimos quibusdam atque?</p>
+      </aside>
+    </main>
+
+    <!-- And here is our main footer that is used across all the pages of our website -->
+    <footer>
+      <!-- footer content in here -->
+      <p class="text-center text-muted">&copy; Copyright 2024 - Accessibility Demo</p>
+    </footer>
+  </body>
+</html>

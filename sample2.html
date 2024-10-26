@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Demo</title>
+
+  <!-- CSS (load bootstrap from a CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body { padding-top:50px; }
+  </style>
+  <style type="text/css">
+    .book-list {
+      list-style-type: none;
+      padding: 0;
+      margin-top: 50px;
+    }
+
+    .book-list li {
+      cursor: pointer;
+      border: 1px solid #020101;
+    }
+
+    .book-list li p {
+      margin-top: 1rem;
+      text-align-last: center;
+    }
+
+    .links {
+      color: #700404 !important;
+    }
+
+    .flex-container-row {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+  </style>
+  <script>
+    function showAddBookAlert() {
+      alert ("Adding book to list!");
+    }
+  </script>
+</head>
+<body class="mw-100 container-xl px-5">
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/">Accessibility Demo</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link links" href="/index.html">Sample 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link links" href="/sample2.html">Sample 2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link links" href="/semantic-example.html">Semantic Layout Example</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <div class="jumbotron">
+    <h1>Welcome to Zak's recommended book reads!</h1>
+    <h2 class='mb-4'>A collection of books to read for fun, education, and programming.</h2>
+
+    <button class='btn btn-primary' onclick='showAddBookAlert()'>Add New Book</button>
+    <div>
+      <ul class="book-list flex-container-row">
+        <li key="The Phoenix Project" id="The Phoenix Project" class='card'>
+          <a href='/'>
+            <p>The Phoenix Project</p>
+            <img src='./phoenixproject.jpg' height='500' width='500' alt='The Phoenix Project'>
+          </a>
+        </li>
+        <li key="System Design Interview" id="System Design Interview" class='card'>
+          <a href='/'>
+            <p>System Design Interview</p>
+            <img src='./systemdesigninterview.jpg' height='500' width='800' alt='System Design Interview by Alex Xu'>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>
+  <p class="text-center text-muted">&copy; Copyright 2024 - Accessibility Demo</p>
+</footer>
+
+</body>
+</html>
